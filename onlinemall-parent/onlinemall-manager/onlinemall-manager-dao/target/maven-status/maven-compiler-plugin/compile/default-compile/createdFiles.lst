@@ -1,0 +1,11 @@
+com\xwt\onlinemall\mapper\TbItemMapper.class
+com\xwt\onlinemall\mapper\TbContentMapper.class
+com\xwt\onlinemall\mapper\TbOrderShippingMapper.class
+com\xwt\onlinemall\mapper\TbContentCategoryMapper.class
+com\xwt\onlinemall\mapper\TbItemParamMapper.class
+com\xwt\onlinemall\mapper\TbItemDescMapper.class
+com\xwt\onlinemall\mapper\TbUserMapper.class
+com\xwt\onlinemall\mapper\TbItemParamItemMapper.class
+com\xwt\onlinemall\mapper\TbOrderMapper.class
+com\xwt\onlinemall\mapper\TbOrderItemMapper.class
+com\xwt\onlinemall\mapper\TbItemCatMapper.class
