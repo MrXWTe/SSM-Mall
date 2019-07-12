@@ -61,5 +61,22 @@ e3-parent：父工程，依赖包版本管理
 </build>
 ```
 
+##### 3、Dubbo工程debug
+
+设置`timeout`属性，dubbo默认1s内没有查询到服务将抛异常，设置timeout能够延迟查询时间
+
+```xml
+<!-- 使用dubbo发布服务 -->
+<!-- 提供方应用信息，用于计算依赖关系 -->
+<dubbo:application name="onlinemall-manager-service" />
+<dubbo:registry protocol="zookeeper"
+                address="218.197.194.82:2181" />
+<!-- 用dubbo协议在20880端口暴露服务 -->
+<dubbo:protocol name="dubbo" port="30110" />
+<!-- 声明需要暴露的服务接口 -->
+<dubbo:service interface="com.xwt.onlinemall.service.ItemService" timeout="600000"
+               ref="itemServiceImpl" />
+```
+
 
 

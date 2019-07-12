@@ -9,7 +9,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
-	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd
+    http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <context:component-scan base-package="com.xwt.onlinemall.service"/>
 
@@ -17,9 +18,10 @@
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="onlinemall-manager-service" />
     <dubbo:registry protocol="zookeeper"
-                    address="218.197.195.212:2181" />
+                    address="218.197.194.82:2181" />
     <!-- 用dubbo协议在20880端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="20880" />
+    <dubbo:protocol name="dubbo" port="30110" />
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.xwt.onlinemall.service.ItemService" ref="itemServiceImpl" />
+    <dubbo:service interface="com.xwt.onlinemall.service.ItemService" timeout="600000"
+                   ref="itemServiceImpl" />
 </beans>
