@@ -24,4 +24,6 @@
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.xwt.onlinemall.service.ItemService" timeout="600000"
                    ref="itemServiceImpl" />
+    <dubbo:service interface="com.xwt.onlinemall.service.ItemCatService" timeout="600000"
+                   ref="itemCatServiceImpl" />
 </beans>
