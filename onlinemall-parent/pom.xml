@@ -11,6 +11,8 @@
         <module>onlinemall-common</module>
         <module>onlinemall-manager</module>
         <module>onlinemall-web</module>
+        <module>onlinemall-portal-web</module>
+        <module>onlinemall-content</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 集中定义依赖版本号 -->
