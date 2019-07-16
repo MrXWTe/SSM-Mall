@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.xwt.test.PageHelperTest" time="1.079" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.xwt.test.PageHelperTest" time="0.846" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.3.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
     <property name="java.vm.version" value="25.202-b08"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-manager"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\IdeaProjects\SSM-Mall\onlinemall-parent"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-manager"/>
+    <property name="user.dir" value="E:\IdeaProjects\SSM-Mall\onlinemall-parent"/>
     <property name="java.runtime.version" value="1.8.0_202-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
@@ -62,5 +62,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.xwt.test.PageHelperTest" name="testPageHelper" time="1.079"/>
+  <testcase classname="com.xwt.test.PageHelperTest" name="testPageHelper" time="0.846"/>
 </testsuite>
