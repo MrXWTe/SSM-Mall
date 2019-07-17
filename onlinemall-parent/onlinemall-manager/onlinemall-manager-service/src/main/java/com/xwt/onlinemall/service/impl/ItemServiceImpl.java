@@ -165,7 +165,7 @@ public class ItemServiceImpl implements ItemService {
     public TbItemDesc getItemDescById(long itemId) {
         // 查询缓存
         try{
-            String s = jedisClient.get(REDIS_ITEM_PRE + itemId + ":" + ":BASE");
+            String s = jedisClient.get(REDIS_ITEM_PRE + itemId + ":" + ":DESC");
             if(StringUtils.isNoneBlank(s)){
                 TbItemDesc tbItemDesc = JsonUtils.jsonToPojo(s, TbItemDesc.class);
                 return tbItemDesc;
