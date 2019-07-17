@@ -1,0 +1,521 @@
+
+
+[INFO ] 2019-07-17 11:00:01,181 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'onlinemall-search-web': initialization started
+
+
+[INFO ] 2019-07-17 11:00:01,200 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Wed Jul 17 11:00:01 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-17 11:00:01,234 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-07-17 11:00:01,471 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-07-17 11:00:01,565 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-07-17 11:00:01,568 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-07-17 11:00:01,795 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\MrXu\.dubbo\dubbo-registry-218.197.194.82.cache, data: {com.xwt.onlinemall.search.service.SearchService=empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=17216&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563273226879 empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=17216&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563273226879 dubbo://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-service&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=13448&side=provider&timeout=600000&timestamp=1563272859965, com.xwt.onlinemall.service.ItemCatService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemCatService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemCatService&methods=getItemCatList&pid=16464&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563270656755, com.xwt.onlinemall.service.ItemService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemService&methods=addItem,getItemList,getItemById&pid=16464&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563270656407, com.xwt.onlinemall.content.service.ContentCategoryService=empty://218.197.194.254:30111/com.xwt.onlinemall.content.service.ContentCategoryService?anyhost=true&application=onlinemall-content-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=17584&side=provider&timeout=600000&timestamp=1563270634551, com.xwt.onlinemall.search.service.SearchItemService=empty://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchItemService?anyhost=true&application=onlinemall-search-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchItemService&methods=importAllItems&pid=13448&side=provider&timeout=600000&timestamp=1563272859246}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-07-17 11:00:01,803 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-07-17 11:00:01,815 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-07-17 11:00:01,815 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LAPTOP-HJ084995
+
+
+[INFO ] 2019-07-17 11:00:01,816 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_202
+
+
+[INFO ] 2019-07-17 11:00:01,816 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-07-17 11:00:01,816 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.8.0_202\jre
+
+
+[INFO ] 2019-07-17 11:00:01,817 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA\lib\idea_rt.jar
+
+
+[INFO ] 2019-07-17 11:00:01,817 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\Program Files (x86)\Python37-32\Scripts\;F:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\mysql-8.0.15-winx64\bin;D:\Program Files\nodejs\;F:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_121\bin\;D:\Program Files\Java\jre1.8.0_121\bin\;D:\Program Files\apache\maven\bin\;D:\Program Files\gradle\gradle-4.9\bin\;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\MrXu\AppData\Local\Microsoft\WindowsApps;C:\Users\MrXu\AppData\Roaming\npm;F:\Program Files\texlive\2019\bin\win32;.
+
+
+[INFO ] 2019-07-17 11:00:01,817 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\MrXu\AppData\Local\Temp\
+
+
+[INFO ] 2019-07-17 11:00:01,817 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-07-17 11:00:01,818 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-07-17 11:00:01,818 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-07-17 11:00:01,819 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-07-17 11:00:01,819 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=MrXu
+
+
+[INFO ] 2019-07-17 11:00:01,819 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\MrXu
+
+
+[INFO ] 2019-07-17 11:00:01,819 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search-web
+
+
+[INFO ] 2019-07-17 11:00:01,820 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=218.197.194.82:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@6076e4a
+
+
+[INFO ] 2019-07-17 11:00:01,845 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:03,875 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:04,984 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:06,988 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:08,090 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:10,096 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:11,198 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:13,204 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:14,304 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:16,319 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:17,421 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:19,445 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:20,546 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:22,557 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:23,659 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:25,664 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:26,765 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:28,771 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:29,871 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:31,877 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:32,977 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:34,982 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:36,083 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2019-07-17 11:00:38,090 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2019-07-17 11:00:39,192 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-07-17 11:03:01,891 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'onlinemall-search-web': initialization started
+
+
+[INFO ] 2019-07-17 11:03:01,907 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Wed Jul 17 11:03:01 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-17 11:03:01,938 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-07-17 11:03:02,115 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-07-17 11:03:02,193 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-07-17 11:03:02,193 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-07-17 11:03:02,388 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\MrXu\.dubbo\dubbo-registry-218.197.194.82.cache, data: {com.xwt.onlinemall.search.service.SearchService=empty://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=14008&side=provider&timeout=600000&timestamp=1563332573245, com.xwt.onlinemall.service.ItemCatService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemCatService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemCatService&methods=getItemCatList&pid=16464&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563270656755, com.xwt.onlinemall.service.ItemService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemService&methods=addItem,getItemList,getItemById&pid=16464&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563270656407, com.xwt.onlinemall.content.service.ContentCategoryService=empty://218.197.194.254:30111/com.xwt.onlinemall.content.service.ContentCategoryService?anyhost=true&application=onlinemall-content-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=17584&side=provider&timeout=600000&timestamp=1563270634551, com.xwt.onlinemall.search.service.SearchItemService=empty://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchItemService?anyhost=true&application=onlinemall-search-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchItemService&methods=importAllItems&pid=14008&side=provider&timeout=600000&timestamp=1563332572745}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-07-17 11:03:02,404 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LAPTOP-HJ084995
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_202
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.8.0_202\jre
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA\lib\idea_rt.jar
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\Program Files (x86)\Python37-32\Scripts\;F:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\mysql-8.0.15-winx64\bin;D:\Program Files\nodejs\;F:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_121\bin\;D:\Program Files\Java\jre1.8.0_121\bin\;D:\Program Files\apache\maven\bin\;D:\Program Files\gradle\gradle-4.9\bin\;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\MrXu\AppData\Local\Microsoft\WindowsApps;C:\Users\MrXu\AppData\Roaming\npm;F:\Program Files\texlive\2019\bin\win32;.
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\MrXu\AppData\Local\Temp\
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=MrXu
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\MrXu
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search-web
+
+
+[INFO ] 2019-07-17 11:03:02,420 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=218.197.194.82:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@49a5ee2
+
+
+[INFO ] 2019-07-17 11:03:02,435 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-07-17 11:03:02,435 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 218.197.194.82/218.197.194.82:2181, initiating session
+
+
+[INFO ] 2019-07-17 11:03:02,467 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 218.197.194.82/218.197.194.82:2181, sessionid = 0x16bfde165c80001, negotiated timeout = 30000
+
+
+[INFO ] 2019-07-17 11:03:02,467 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-07-17 11:03:02,482 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563332582352, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,529 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563332582352, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,640 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563332582352, urls: [dubbo://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-service&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=14008&side=provider&timeout=600000&timestamp=1563332573245, empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563332582352, empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563332582352], dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,751 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /218.197.194.254:30112 from NettyClient 218.197.194.254 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb2b05cf1, /218.197.194.254:54640 => /218.197.194.254:30112]], dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,751 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LAPTOP-HJ084995/218.197.194.254 connect to the server /218.197.194.254:30112, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,782 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.xwt.onlinemall.search.service.SearchService from url zookeeper://218.197.194.82:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=onlinemall-search-web&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1563332582352, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-17 11:03:02,892 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.xwt.onlinemall.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-07-17 11:03:03,112 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Wed Jul 17 11:03:01 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-17 11:03:03,143 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Wed Jul 17 11:03:01 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-17 11:03:03,205 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'onlinemall-search-web': initialization completed in 1298 ms
+
+
+[WARN ] 2019-07-17 11:03:27,418 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5292072d}, dubbo version: 2.5.3, current host: 218.197.194.254
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5292072d}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-07-17 11:03:29,436 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5d9c314f}, dubbo version: 2.5.3, current host: 218.197.194.254
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5d9c314f}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-07-17 11:03:31,454 method:com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:112)
+ [DUBBO] Decode rpc result failed: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5c19cb8}, dubbo version: 2.5.3, current host: 218.197.194.254
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5c19cb8}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-07-17 11:03:31,468 method:com.xwt.onlinemall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:31)
+系统出现异常
+
+
+[ERROR] 2019-07-17 11:03:31,469 method:com.xwt.onlinemall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:32)
+系统发生异常com.alibaba.dubbo.rpc.RpcException: Failed to invoke the method search in the service com.xwt.onlinemall.search.service.SearchService. Tried 3 times of the providers [218.197.194.254:30112] (1/1) from the registry 218.197.194.82:2181 on the consumer 218.197.194.254 using the dubbo version 2.5.3. Last error is: Failed to invoke remote method: search, provider: dubbo://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-web&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9328&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1563332582352, cause: java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5c19cb8}
+java.io.IOException: Response data error, expect Throwable, but get {cause=java.net.ConnectException: Connection refused: connect, suppressedExceptions=[], detailMessage=Server refused connection at: http://218.197.194.82:8080/solr/collection1, stackTrace=[Ljava.lang.StackTraceElement;@5c19cb8}
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:94)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DecodeableRpcResult.decode(DecodeableRpcResult.java:109)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCodec.decodeBody(DubboCodec.java:97)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:126)
+	at com.alibaba.dubbo.remoting.exchange.codec.ExchangeCodec.decode(ExchangeCodec.java:87)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboCountCodec.decode(DubboCountCodec.java:46)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyCodecAdapter$InternalDecoder.messageReceived(NettyCodecAdapter.java:134)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:109)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:90)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+

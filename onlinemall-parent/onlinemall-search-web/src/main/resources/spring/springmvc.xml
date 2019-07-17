@@ -18,6 +18,9 @@
     <!--注解驱动器-->
     <mvc:annotation-driven />
 
+    <!--配置全局异常处理器-->
+    <bean class="com.xwt.onlinemall.search.exception.GlobalExceptionResolver" />
+
     <!--视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/" />
