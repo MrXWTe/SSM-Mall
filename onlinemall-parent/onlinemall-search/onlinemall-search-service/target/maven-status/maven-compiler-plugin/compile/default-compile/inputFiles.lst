@@ -2,4 +2,5 @@ E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-s
 E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-service\src\main\java\com\xwt\onlinemall\search\service\impl\SearchServiceImpl.java
 E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-service\src\main\java\com\xwt\onlinemall\search\mapper\ItemMapper.java
 E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-service\src\main\java\com\xwt\onlinemall\search\message\MyMessageListener.java
+E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-service\src\main\java\com\xwt\onlinemall\search\message\ItemChangeListener.java
 E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search\onlinemall-search-service\src\main\java\com\xwt\onlinemall\search\service\impl\SearchItemServiceImpl.java

@@ -1,5 +1,6 @@
 com\xwt\onlinemall\utils\IDUtils.class
 com\xwt\onlinemall\commonpojo\EasyUIDataGridResult.class
+com\xwt\onlinemall\utils\JsonUtils.class
 com\xwt\onlinemall\commonpojo\SearchResult.class
 com\xwt\onlinemall\utils\E3Result.class
 com\xwt\onlinemall\commonpojo\EasyUITreeNode.class

@@ -38,3 +38,4 @@
 0:0:0:0:0:0:0:1 - - [17/Jul/2019:16:00:32 +0800] "POST /item/cat/list HTTP/1.1" 200 159 http-bio-8081-exec-9 13
 0:0:0:0:0:0:0:1 - - [17/Jul/2019:16:00:33 +0800] "POST /item/cat/list HTTP/1.1" 200 99 http-bio-8081-exec-1 7
 0:0:0:0:0:0:0:1 - - [17/Jul/2019:16:02:54 +0800] "POST /item/save HTTP/1.1" 200 48 http-bio-8081-exec-6 191
+0:0:0:0:0:0:0:1 - - [17/Jul/2019:16:37:55 +0800] "POST /item/save HTTP/1.1" 200 48 http-bio-8081-exec-1 924

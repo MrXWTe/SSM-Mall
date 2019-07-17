@@ -15,6 +15,7 @@
         <module>onlinemall-content</module>
         <module>onlinemall-search</module>
         <module>onlinemall-search-web</module>
+        <module>onlinemall-item-web</module>
     </modules>
     <packaging>pom</packaging>
     <!-- 集中定义依赖版本号 -->

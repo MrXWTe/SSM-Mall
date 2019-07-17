@@ -9,16 +9,16 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
     <!--连接jedis单机版-->
-    <!--<bean class="com.xwt.onlinemall.jedis.JedisClientPool" id="jedisClientPool">
+    <bean class="com.xwt.onlinemall.jedis.JedisClientPool" id="jedisClientPool">
         <property name="jedisPool" ref="jedisPool" />
     </bean>
     <bean class="redis.clients.jedis.JedisPool" id="jedisPool">
         <constructor-arg name="host" value="218.197.194.82"/>
         <constructor-arg name="port" value="6379" />
-    </bean>-->
+    </bean>
 
     <!--redis集群-->
-    <bean class="com.xwt.onlinemall.jedis.JedisClientCluster" id="jedisClientCluster">
+    <!--<bean class="com.xwt.onlinemall.jedis.JedisClientCluster" id="jedisClientCluster">
         <property name="jedisCluster" ref="jedisCluster" />
     </bean>
     <bean class="redis.clients.jedis.JedisCluster" id="jedisCluster">
@@ -51,5 +51,5 @@
 
             </set>
         </constructor-arg>
-    </bean>
+    </bean>-->
 </beans>
