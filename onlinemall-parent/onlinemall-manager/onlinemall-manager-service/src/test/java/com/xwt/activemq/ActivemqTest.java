@@ -23,7 +23,7 @@ public class ActivemqTest {
         Connection connection = factory.createConnection();
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Queue queue = session.createQueue("test-Queue");
+        Queue queue = session.createQueue("spring-queue");
         MessageProducer producer = session.createProducer(queue);
         TextMessage testMessage = session.createTextMessage("Hello ActiveMQ");
         producer.send(testMessage);
@@ -45,7 +45,7 @@ public class ActivemqTest {
         Connection connection = factory.createConnection();
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Queue queue = session.createQueue("test-Queue");
+        Queue queue = session.createQueue("spring-queue");
         MessageConsumer consumer = session.createConsumer(queue);
         consumer.setMessageListener(new MessageListener() {
             @Override

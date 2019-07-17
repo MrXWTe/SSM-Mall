@@ -85,10 +85,12 @@
             <artifactId>jedis</artifactId>
         </dependency>
 
+        <!--activemq相关-->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-all</artifactId>
         </dependency>
+
     </dependencies>
 
     <!-- 配置tomcat插件 -->
