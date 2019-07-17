@@ -32,13 +32,22 @@
     </bean>
     <!--这个是主题目的地，一对多的 -->
     <bean id="topicDestination" class="org.apache.activemq.command.ActiveMQTopic">
-        <constructor-arg value="topic" />
+        <constructor-arg value="item-change-item" />
     </bean>
+    <!--junit测试使用的监听类-->
     <bean id="myMessageListener" class="com.xwt.onlinemall.search.message.MyMessageListener"/>
     <!-- 消息监听容器 -->
     <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
         <property name="connectionFactory" ref="connectionFactory" />
         <property name="destination" ref="queueDestination" />
         <property name="messageListener" ref="myMessageListener" />
+    </bean>
+
+    <!--添加商品监听类-->
+    <bean id="itemChangeListener" class="com.xwt.onlinemall.search.message.ItemChangeListener"/>
+    <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">
+        <property name="connectionFactory" ref="connectionFactory" />
+        <property name="destination" ref="topicDestination" />
+        <property name="messageListener" ref="itemChangeListener" />
     </bean>
 </beans>

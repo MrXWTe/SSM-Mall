@@ -12,8 +12,12 @@ import com.xwt.onlinemall.service.ItemService;
 import com.xwt.onlinemall.utils.E3Result;
 import com.xwt.onlinemall.utils.IDUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import javax.jms.*;
 import java.util.Date;
 import java.util.List;
 
@@ -30,6 +34,13 @@ public class ItemServiceImpl implements ItemService {
 
     @Autowired
     private TbItemDescMapper itemDescMapper;
+
+    @Autowired
+    private JmsTemplate jmsTemplate;
+
+    @Resource
+    private Destination topicDestination;
+
 
     @Override
     public TbItem getItemById(long id) {
@@ -57,7 +68,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public E3Result addItem(TbItem item, String desc) {
         // 生成商品ID
-        long itemId = IDUtils.genItemId();
+        final long itemId = IDUtils.genItemId();
         // 补全Item属性
         item.setId(itemId);
         // 向商品表插入数据
@@ -76,6 +87,18 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setUpdated(new Date());
         // 向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
+
+
+        // 添加完商品后，发送消息通知ActiveMQ将商品添加进索引库
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId+"");
+                return textMessage;
+            }
+        });
+
+
         // 返回成功
         return E3Result.ok();
     }

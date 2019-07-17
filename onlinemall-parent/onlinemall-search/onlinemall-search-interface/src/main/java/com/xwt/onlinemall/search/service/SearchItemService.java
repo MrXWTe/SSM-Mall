@@ -9,4 +9,5 @@ import com.xwt.onlinemall.utils.E3Result;
  */
 public interface SearchItemService {
     E3Result importAllItems();
+    E3Result importOneItem(long itemId);
 }
