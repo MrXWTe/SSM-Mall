@@ -24,4 +24,6 @@
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.xwt.onlinemall.sso.service.RegisterService" timeout="600000"
                    ref="registerServiceImpl" />
+    <dubbo:service interface="com.xwt.onlinemall.sso.service.LoginService" timeout="600000"
+                   ref="loginServiceImpl" />
 </beans>

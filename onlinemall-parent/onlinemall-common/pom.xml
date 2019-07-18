@@ -64,9 +64,16 @@
             <version>1.16.18</version>
         </dependency>
 
+        <!--redis相关-->
         <dependency>
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
+        </dependency>
+
+        <!--servlet相关-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
         </dependency>
     </dependencies>
 </project>
