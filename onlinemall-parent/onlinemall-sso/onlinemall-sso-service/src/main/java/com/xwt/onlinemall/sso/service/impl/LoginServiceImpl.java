@@ -67,7 +67,7 @@ public class LoginServiceImpl implements LoginService {
         // 3、把用户信息保存到redis。Key就是token，value就是TbUser对象转换成json。
         // 4、使用String类型保存Session信息。可以使用“前缀:token”为key
         user.setPassword(null);
-        jedisClient.set("SESSION:" + ":" + token, JsonUtils.objectToJson(user));
+        jedisClient.set("SESSION" + ":" + token, JsonUtils.objectToJson(user));
         // 5、设置key的过期时间。模拟Session的过期时间。一般半个小时。
         jedisClient.expire("SESSION" + ":" + token, SESSION_EXPIRE);
         // 6、返回e3Result包装token。

@@ -26,4 +26,6 @@
                    ref="registerServiceImpl" />
     <dubbo:service interface="com.xwt.onlinemall.sso.service.LoginService" timeout="600000"
                    ref="loginServiceImpl" />
+    <dubbo:service interface="com.xwt.onlinemall.sso.service.TokenService" timeout="600000"
+                   ref="tokenServiceImpl" />
 </beans>
