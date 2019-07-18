@@ -671,3 +671,155 @@ Looking for @ControllerAdvice: WebApplicationContext for namespace 'onlinemall-s
 
 [INFO ] 2019-07-17 16:58:06,051 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
 FrameworkServlet 'onlinemall-search-web': initialization completed in 2097 ms
+
+
+[INFO ] 2019-07-18 16:34:03,150 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'onlinemall-search-web': initialization started
+
+
+[INFO ] 2019-07-18 16:34:03,215 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Thu Jul 18 16:34:03 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-18 16:34:03,238 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-07-18 16:34:03,446 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-07-18 16:34:03,555 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2019-07-18 16:34:03,558 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-07-18 16:34:03,804 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\MrXu\.dubbo\dubbo-registry-218.197.194.82.cache, data: {com.xwt.onlinemall.search.service.SearchService=empty://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9680&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438811419, com.xwt.onlinemall.sso.service.RegisterService=empty://218.197.194.254/com.xwt.onlinemall.sso.service.RegisterService?application=onlinemall-portal-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.RegisterService&methods=checkData,register&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831680 empty://218.197.194.254/com.xwt.onlinemall.sso.service.RegisterService?application=onlinemall-portal-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.RegisterService&methods=checkData,register&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831680 dubbo://218.197.194.254:30114/com.xwt.onlinemall.sso.service.RegisterService?anyhost=true&application=onlinemall-sso-service&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.RegisterService&methods=checkData,register&pid=16704&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438821229, com.xwt.onlinemall.sso.service.TokenService=empty://218.197.194.254/com.xwt.onlinemall.sso.service.TokenService?application=onlinemall-portal-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.TokenService&methods=getUserByToken&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831896 empty://218.197.194.254/com.xwt.onlinemall.sso.service.TokenService?application=onlinemall-portal-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.TokenService&methods=getUserByToken&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831896 dubbo://218.197.194.254:30114/com.xwt.onlinemall.sso.service.TokenService?anyhost=true&application=onlinemall-sso-service&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.TokenService&methods=getUserByToken&pid=16704&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438821688, com.xwt.onlinemall.service.ItemCatService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemCatService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemCatService&methods=getItemCatList&pid=20788&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438798171, com.xwt.onlinemall.service.ItemService=empty://218.197.194.254:30110/com.xwt.onlinemall.service.ItemService?anyhost=true&application=onlinemall-manager-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.service.ItemService&methods=addItem,getItemList,getItemById,getItemDescById&pid=20788&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438797825, com.xwt.onlinemall.content.service.ContentCategoryService=empty://218.197.194.254:30111/com.xwt.onlinemall.content.service.ContentCategoryService?anyhost=true&application=onlinemall-content-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=10864&side=provider&timeout=600000&timestamp=1563438755132, com.xwt.onlinemall.sso.service.LoginService=empty://218.197.194.254/com.xwt.onlinemall.sso.service.LoginService?application=onlinemall-portal-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.LoginService&methods=login&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831204 empty://218.197.194.254/com.xwt.onlinemall.sso.service.LoginService?application=onlinemall-portal-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.LoginService&methods=login&pid=19616&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438831204 dubbo://218.197.194.254:30114/com.xwt.onlinemall.sso.service.LoginService?anyhost=true&application=onlinemall-sso-service&dubbo=2.5.3&interface=com.xwt.onlinemall.sso.service.LoginService&methods=login&pid=16704&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438821600, com.xwt.onlinemall.search.service.SearchItemService=empty://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchItemService?anyhost=true&application=onlinemall-search-service&category=configurators&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchItemService&methods=importAllItems&pid=9680&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438810885}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-07-18 16:34:03,816 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-07-18 16:34:03,830 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2019-07-18 16:34:03,830 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LAPTOP-HJ084995
+
+
+[INFO ] 2019-07-18 16:34:03,830 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_202
+
+
+[INFO ] 2019-07-18 16:34:03,831 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-07-18 16:34:03,831 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\Java\jdk1.8.0_202\jre
+
+
+[INFO ] 2019-07-18 16:34:03,831 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\JetBrains\IntelliJ IDEA\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\Program Files\JetBrains\IntelliJ IDEA\lib\idea_rt.jar
+
+
+[INFO ] 2019-07-18 16:34:03,831 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\Program Files (x86)\Python37-32\Scripts\;F:\Program Files (x86)\Python37-32\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\Program Files\mysql-8.0.15-winx64\bin;D:\Program Files\nodejs\;F:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_121\bin\;D:\Program Files\Java\jre1.8.0_121\bin\;D:\Program Files\apache\maven\bin\;D:\Program Files\gradle\gradle-4.9\bin\;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\MrXu\AppData\Local\Microsoft\WindowsApps;C:\Users\MrXu\AppData\Roaming\npm;F:\Program Files\texlive\2019\bin\win32;.
+
+
+[INFO ] 2019-07-18 16:34:03,831 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\MrXu\AppData\Local\Temp\
+
+
+[INFO ] 2019-07-18 16:34:03,832 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-07-18 16:34:03,833 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-07-18 16:34:03,833 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-07-18 16:34:03,833 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-07-18 16:34:03,833 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=MrXu
+
+
+[INFO ] 2019-07-18 16:34:03,834 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\MrXu
+
+
+[INFO ] 2019-07-18 16:34:03,834 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\IdeaProjects\SSM-Mall\onlinemall-parent\onlinemall-search-web
+
+
+[INFO ] 2019-07-18 16:34:03,835 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=218.197.194.82:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@56d63832
+
+
+[INFO ] 2019-07-18 16:34:03,992 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 218.197.194.82/218.197.194.82:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-07-18 16:34:03,999 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 218.197.194.82/218.197.194.82:2181, initiating session
+
+
+[INFO ] 2019-07-18 16:34:04,028 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 218.197.194.82/218.197.194.82:2181, sessionid = 0x16c029be101001a, negotiated timeout = 30000
+
+
+[INFO ] 2019-07-18 16:34:04,029 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-07-18 16:34:04,057 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=consumers&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438843746, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,133 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438843746, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,258 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438843746, urls: [dubbo://218.197.194.254:30112/com.xwt.onlinemall.search.service.SearchService?anyhost=true&application=onlinemall-search-service&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=9680&revision=1.0-SNAPSHOT&side=provider&timeout=600000&timestamp=1563438811419, empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=configurators&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438843746, empty://218.197.194.254/com.xwt.onlinemall.search.service.SearchService?application=onlinemall-search-web&category=routers&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1563438843746], dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,418 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /218.197.194.254:30112 from NettyClient 218.197.194.254 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9a22a0b1, /218.197.194.254:49504 => /218.197.194.254:30112]], dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,419 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient LAPTOP-HJ084995/218.197.194.254 connect to the server /218.197.194.254:30112, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,469 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.xwt.onlinemall.search.service.SearchService from url zookeeper://218.197.194.82:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=onlinemall-search-web&check=false&dubbo=2.5.3&interface=com.xwt.onlinemall.search.service.SearchService&methods=search&pid=16904&revision=1.0-SNAPSHOT&side=consumer&timeout=600000&timestamp=1563438843746, dubbo version: 2.5.3, current host: 218.197.194.254
+
+
+[INFO ] 2019-07-18 16:34:04,595 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String com.xwt.onlinemall.search.controller.SearchController.search(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2019-07-18 16:34:05,001 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Thu Jul 18 16:34:03 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-18 16:34:05,048 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'onlinemall-search-web-servlet': startup date [Thu Jul 18 16:34:03 GMT+08:00 2019]; root of context hierarchy
+
+
+[INFO ] 2019-07-18 16:34:05,131 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'onlinemall-search-web': initialization completed in 1928 ms
