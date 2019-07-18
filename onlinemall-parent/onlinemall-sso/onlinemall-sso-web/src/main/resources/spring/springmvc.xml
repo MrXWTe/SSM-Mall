@@ -30,6 +30,5 @@
     <!-- 引用dubbo服务 -->
     <dubbo:application name="onlinemall-portal-web"/>
     <dubbo:registry protocol="zookeeper" address="218.197.194.82:2181"/>
-   <!-- <dubbo:reference interface="com.xwt.onlinemall.service.ItemService" id="itemService" />
-    <dubbo:reference interface="com.xwt.onlinemall.service.ItemCatService" id="itemCatService" />-->
+    <dubbo:reference interface="com.xwt.onlinemall.sso.service.RegisterService" id="registerService" />
 </beans>
